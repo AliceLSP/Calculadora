@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      
+
   pull_request:
     branches:
       - main
@@ -74,8 +74,8 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v2 
         with: 
           args: > 
-            -Dsonar.projectKey=MSCiriaco81_calculadora
-            -Dsonar.organization=msciriaco81
+            -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
+            -Dsonar.organization=${{ secrets.SONAR_ORG }}
         env: 
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
