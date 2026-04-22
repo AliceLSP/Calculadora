@@ -9,7 +9,6 @@ on:
       - main
 
 jobs:
-
   security:
     runs-on: ubuntu-latest
 
