@@ -1,0 +1,8 @@
+services:
+  calculadora-app:
+    build: .
+    image: alicelsp/pipeline-ci:latest
+
+  servico-vizinho:
+    image: alpine
+    command: sleep infinity
